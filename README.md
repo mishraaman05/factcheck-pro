@@ -158,7 +158,7 @@ This project can be deployed easily using Streamlit Community Cloud.
 
 ## 🔗 Streamlit Deployment
 
-👉 https://share.streamlit.io
+👉 https://factcheck-pro-e5wwz2ssjhf4rtdhdsafld.streamlit.app/
 
 ### Deployment Steps
 
