@@ -1,0 +1,145 @@
+/* FactCheck Pro - Premium Cyberpunk Glassmorphism UI */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body, [data-testid="stAppViewContainer"] {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at 50% 50%, #0d0b18 0%, #040209 100%);
+    color: #e2e8f0;
+}
+
+/* Header Text styling overrides */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+}
+
+/* Sidebar Styling */
+[data-testid="stSidebar"] {
+    background-color: rgba(10, 7, 20, 0.6) !important;
+    backdrop-filter: blur(12px);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Glowing Neon Titles */
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #7f00ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 0px;
+    text-shadow: 0 0 30px rgba(0, 242, 254, 0.2);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/* Modular Glassmorphic Cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Status Cards Neon Glows */
+.card-verified {
+    border-left: 5px solid #00e676 !important;
+    box-shadow: 0 4px 20px rgba(0, 230, 118, 0.1);
+}
+
+.card-inaccurate {
+    border-left: 5px solid #ff9100 !important;
+    box-shadow: 0 4px 20px rgba(255, 145, 0, 0.1);
+}
+
+.card-false {
+    border-left: 5px solid #ff1744 !important;
+    box-shadow: 0 4px 20px rgba(255, 23, 68, 0.1);
+}
+
+/* Custom Status Badges */
+.badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.badge-verified {
+    background: rgba(0, 230, 118, 0.15);
+    color: #00e676;
+    border: 1px solid rgba(0, 230, 118, 0.3);
+}
+
+.badge-inaccurate {
+    background: rgba(255, 145, 0, 0.15);
+    color: #ff9100;
+    border: 1px solid rgba(255, 145, 0, 0.3);
+}
+
+.badge-false {
+    background: rgba(255, 23, 68, 0.15);
+    color: #ff1744;
+    border: 1px solid rgba(255, 23, 68, 0.3);
+}
+
+/* Utility Design Blocks */
+.claim-label {
+    font-size: 0.85rem;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+    margin-top: 12px;
+}
+
+.claim-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+.fact-text {
+    font-size: 1rem;
+    color: #cbd5e1;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* File Upload Overrides */
+div[data-testid="stFileUploader"] {
+    background: rgba(255, 255, 255, 0.01) !important;
+    border: 2px dashed rgba(79, 172, 254, 0.3) !important;
+    border-radius: 16px !important;
+    padding: 20px !important;
+    transition: border-color 0.3s ease;
+}
+
+div[data-testid="stFileUploader"]:hover {
+    border-color: #00f2fe !important;
+}
